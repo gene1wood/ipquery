@@ -128,8 +128,8 @@ IPQuery expects to run on RHEL/CentOS 7.
 
 Feel free to [fork this module] [11] and contribut pull requests.
 
-[1]: https://github.com/mozilla/security/tree/master/operations/ipquery "IPQuery"
-[2]: https://github.com/mozilla/security/tree/master/operations/ip2instance "ip2instance"
+[1]: https://github.com/gene1wood/ipquery "IPQuery"
+[2]: https://github.com/gene1wood/ip2instance "ip2instance"
 [3]: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html "IAM Roles"
 [4]: https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language "SAML"
 [5]: https://docs.puppetlabs.com/puppet/latest/reference/lang_facts_and_builtin_vars.html#handling-boolean-facts-in-older-puppet-versions "stringifying facts"
@@ -138,4 +138,4 @@ Feel free to [fork this module] [11] and contribut pull requests.
 [8]: http://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html "AssumeRole"
 [9]: http://flask.pocoo.org/docs/quickstart/#sessions "Flask sessions" 
 [10]: http://flask.pocoo.org/docs/0.10/deploying/mod_wsgi/#creating-a-wsgi-file "Flask WSGI file"
-[11]: https://github.com/mozilla/security/tree/master/operations/ipquery/puppet/modules/ipquery "IPQuery module"
+[11]: https://github.com/gene1wood/ipquery/tree/master/puppet/modules/ipquery "IPQuery module"

@@ -21,15 +21,14 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # http://packaging.python.org/en/latest/tutorial.html#version
-    version='1.0.0',
+    version='1.0.1',
 
     description='Web application to allow SAML authenticated users to search'
                 'multiple AWS accounts for instances by IP',
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/mozilla/nmap-differential-scan'
-        '/tree/master/ipquery',
+    url='https://github.com/gene1wood/ipquery',
 
     # Author details
     author='Gene Wood',
@@ -66,8 +65,8 @@ setup(
     # simple. Or you can use find_packages().
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
 
-    install_requires=['ip2instance>=1.2.0', 
-                      'PyYAML>=3.11', 
+    install_requires=['ip2instance>=1.2.0',
+                      'PyYAML>=3.11',
                       'Flask>=0.10.1',
                       'Flask-Bootstrap>=3.3.2.1',
                       'Flask-Cache>=0.13.1',

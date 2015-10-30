@@ -4,9 +4,9 @@
   "author": "Gene Wood",
   "license": "MPL-2.0",
   "summary": "Module to deploy the ipquery tool",
-  "source": "https://github.com/mozilla/security/tree/master/operations/ipquery",
-  "project_page": "https://github.com/mozilla/security/tree/master/operations/ipquery",
-  "issues_url": "https://github.com/mozilla/security/issues/",
+  "source": "https://github.com/gene1wood/ipquery/tree/master/puppet/modules/ipquery",
+  "project_page": "https://github.com/gene1wood/ipquery",
+  "issues_url": "https://github.com/gene1wood/ipquery/issues",
   "tags": ["aws", "ec2"],
   "operatingsystem_support": [
     {

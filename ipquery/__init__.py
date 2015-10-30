@@ -44,6 +44,7 @@ import requests
 # sudo yum install python-virtualenv gcc libffi-devel xmlsec1 xmlsec1-openssl
 #     openssl-devel libyaml-devel
 
+
 def get_config():
     config = {'secret_key': str(uuid.uuid4()),
               'metadata_url_for': {'test': 'http://idp.oktadev.com/metadata'},
@@ -224,6 +225,7 @@ def search_for_instance(ip_address):
                 return instances[0]
     return False
 
+
 @app.route("/", methods=['GET', 'POST'])
 @login_required
 def main_page():
@@ -312,11 +314,13 @@ def logout():
     logout_user()
     return redirect(url_for("main_page"))
 
+
 def main():
     port = int(os.environ.get('PORT', 5000))
     if port == 5000:
         app.debug = True
     app.run(host='0.0.0.0', port=port)
+
 
 if __name__ == "__main__":
     main()

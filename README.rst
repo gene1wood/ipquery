@@ -5,50 +5,61 @@ Web application to allow SAML authenticated users to search multiple AWS account
 
 Configuration
 =============
+
 The ipquery configuration file is located at `/etc/ipquery.yaml`. To configure
 ipquery create this file and populate it with your configuration settings.
 
 secret_key
 ----------
+
 A unique secret key to secure Flask sessions
 
 metadata_url_for
 ----------------
+
 A dictionary of all SAML identity providers with the name of the identity
 provider as the key and the identity providers SAML metadata URL as the
 value.
 
 idp_name
 --------
+
 The name of the preferred SAML identity provider.
 
 acs_url_scheme
 --------------
+
 Set this to `http` or `https` depending on how you're serving up the web UI.
 
 PREFERRED_URL_SCHEME
 --------------------
+
 Set this to `http` or `https` depending on how you're serving up the web UI.
 
 loglevel
 --------
+
 The `level <https://docs.python.org/2/library/logging.html#levels>`_ to set for logging.
 
 ip2instance_role_session_name
 -----------------------------
+
 A session name to identify the IAM role assumption
 
 ip2instance_roles
 -----------------
+
 A list of all AWS IAM Role ARNs to assume and use to scan for instances.
 
 ip2instance_policy
 ------------------
+
 The IAM Policy to constrain the access that ipquery will use when assuming
 roles to scan for instances.
 
 Example Configuration
 ---------------------
+
 Here is an example configuration for two foreign AWS accounts
 
 ::
