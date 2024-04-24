@@ -2,21 +2,45 @@
   "name": "gene1wood-ipquery",
   "version": "0.6.0",
   "author": "Gene Wood",
-  "license": "MPL-2.0",
   "summary": "Module to deploy the ipquery tool",
+  "license": "MPL-2.0",
   "source": "https://github.com/gene1wood/ipquery/tree/master/puppet/modules/ipquery",
   "project_page": "https://github.com/gene1wood/ipquery",
   "issues_url": "https://github.com/gene1wood/ipquery/issues",
-  "tags": ["aws", "ec2"],
+  "dependencies": [
+    {
+      "name": "stankevich/python",
+      "version_requirement": "1.9.x"
+    },
+    {
+      "name": "stahnma/epel",
+      "version_requirement": "1.x"
+    },
+    {
+      "name": "puppetlabs/apache",
+      "version_requirement": "1.4.x"
+    }
+  ],
   "operatingsystem_support": [
     {
-    "operatingsystem":"RedHat",
-    "operatingsystemrelease":[ "7", "6" ]
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7",
+        "6"
+      ]
     }
-   ],
-  "dependencies": [
-    { "name": "stankevich/python", "version_requirement": "1.9.x" },
-    { "name": "stahnma/epel", "version_requirement": "1.x" },
-    { "name": "puppetlabs/apache", "version_requirement": "1.4.x" }
-  ]
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 7.24 < 9.0.0"
+    }
+  ],
+  "tags": [
+    "aws",
+    "ec2"
+  ],
+  "pdk-version": "3.0.1",
+  "template-url": "pdk-default#3.0.1",
+  "template-ref": "tags/3.0.1-0-gd13288a"
 }
