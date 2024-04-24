@@ -66,13 +66,13 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
 
     install_requires=['ip2instance>=1.2.0',
-                      'PyYAML>=3.11',
-                      'Flask>=0.10.1',
+                      'PyYAML>=6.0.1',
+                      'Flask>=1.0',
                       'Flask-Bootstrap>=3.3.2.1',
                       'Flask-Cache>=0.13.1',
                       'Flask-Login>=0.2.11',
                       'Flask-WTF>=0.11',
-                      'pysaml2>=2.4.0'],
+                      'pysaml2>=7.5.0'],
 
     include_package_data=True,
     package_data={
