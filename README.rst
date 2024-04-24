@@ -21,6 +21,12 @@ A dictionary of all SAML identity providers with the name of the identity
 provider as the key and the identity providers SAML metadata URL as the
 value.
 
+entity_id
+----------------
+
+The EntityID, typically a URL, that you've configured in your identity
+provider.
+
 idp_name
 --------
 
@@ -69,6 +75,7 @@ Here is an example configuration for two foreign AWS accounts
       idp_name: oktadev
       metadata_url_for: 
         oktadev: "http://idp.oktadev.com/metadata"
+      entity_id: https://mysite.example.com/saml/sso/myidp
       PREFERRED_URL_SCHEME: https
       acs_url_scheme: https
       ip2instance_roles: 

@@ -1,6 +1,8 @@
 <%= {"secret_key"           => @flask_secret_key,
      "idp_name"             => @idp_name,
      "metadata_url_for"     => {@idp_name => @saml_url},
+     "entity_id"            => @entity_id,
      "PREFERRED_URL_SCHEME" => "https",
      "acs_url_scheme"       => "https",
+     "iam_role_type"        => @iam_role_type,
      "ip2instance_roles"    => JSON.load(@ip2instance_roles)}.to_yaml %>

@@ -124,10 +124,13 @@ def saml_client_for(idp_name=None):
     f.close()
 
     settings = {
+        'entityid': (app.config['entity_id']
+                     if app.config['entity_id'] != ''
+                     else None),
         'metadata': {
             # 'inline': metadata,
             "local": [tmp.name]
-            },
+        },
         'service': {
             'sp': {
                 'endpoints': {
@@ -157,6 +160,7 @@ def saml_client_for(idp_name=None):
 
 
 class User(UserMixin):
+
     def __init__(self, user_id):
         user = {}
         self.id = None
@@ -197,6 +201,7 @@ class SimpleCredentials(object):
     # This strips everything out of the boto.sts.credentials other than
     # the values needed to auth to make the object serializable by
     # pickle and consequently cacheable
+
     def __init__(self, access_key, secret_key, session_token):
         self.credentials = Obj()
         self.credentials.access_key = access_key
@@ -259,7 +264,7 @@ def idp_initiated(idp_name):
         user_store[username] = {
             'first_name': authn_response.ava['FirstName'][0],
             'last_name': authn_response.ava['LastName'][0],
-            }
+        }
     user = User(username)
     session['saml_attributes'] = authn_response.ava
     login_user(user)
