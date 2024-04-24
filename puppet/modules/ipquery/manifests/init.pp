@@ -11,6 +11,7 @@ class ipquery (
   $install_dir = $ipquery::params::install_dir,
   $ip2instance_roles = $ipquery::params::ip2instance_roles,
   $saml_url = $ipquery::params::saml_url,
+  $entity_id = $ipquery::params::entity_id,
   $tls_cert_filename = $ipquery::params::tls_cert_filename,
   $tls_certificate = $ipquery::params::tls_certificate,
   $tls_certificate_key = $ipquery::params::tls_certificate_key,
@@ -18,6 +19,7 @@ class ipquery (
   $username = $ipquery::params::username,
   $virtualenv_dir = $ipquery::params::virtualenv_dir,
   $wsgi_filename = $ipquery::params::wsgi_filename,
+  $iam_role_type = $ipquery::params::iam_role_type,
 ) inherits ipquery::params {
 
   include 'epel' # Workaround for bug https://github.com/stankevich/puppet-python/issues/196
@@ -108,5 +110,10 @@ class ipquery (
       File[$docroot],
       Python::Pip['ipquery'],
     ]
+  }
+
+  file { '/etc/cron.daily/update-ipquery-config.py':
+    source => 'puppet:///modules/ipquery/update-ipquery-config.py',
+    mode   => '0755'
   }
 }

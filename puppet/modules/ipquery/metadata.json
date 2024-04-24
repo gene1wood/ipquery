@@ -1,6 +1,6 @@
 {
   "name": "gene1wood-ipquery",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "author": "Gene Wood",
   "license": "MPL-2.0",
   "summary": "Module to deploy the ipquery tool",

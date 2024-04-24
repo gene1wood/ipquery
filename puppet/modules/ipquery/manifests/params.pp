@@ -33,6 +33,7 @@ class ipquery::params {
   $install_dir = '/opt/ipquery'
   $ip2instance_roles = '[]'
   $saml_url = 'http://idp.oktadev.com/metadata'
+  $entity_id = ''
   $tls_cert_filename = '/etc/pki/tls/certs/cert.crt'
   $tls_certificate = '-----BEGIN CERTIFICATE-----
 MIIChDCCAe2gAwIBAgIJALrQYmKb2JKTMA0GCSqGSIb3DQEBBQUAMFsxCzAJBgNV
@@ -69,4 +70,5 @@ ad5fe0sb4By15wbr459Rwq+xalIhLv1qAHVROI173FYV
   $username = 'ipqueryuser'
   $virtualenv_dir = '/opt/ipquery/venv'
   $wsgi_filename = '/opt/ipquery/ipquery.wsgi'
+  $iam_role_type = ''
 }
