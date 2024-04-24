@@ -20,31 +20,34 @@
     "Mappings":{
         "RegionMap":{
             "us-east-1":{
-                "CentOS7x8664withUpdatesHVM":"ami-61bbf104"
+                "CentOS7x8664withUpdatesHVM":"ami-6d1c2007"
             },
             "us-west-2":{
-                "CentOS7x8664withUpdatesHVM":"ami-d440a6e7"
+                "CentOS7x8664withUpdatesHVM":"ami-d2c924b2"
             },
             "us-west-1":{
-                "CentOS7x8664withUpdatesHVM":"ami-f77fbeb3"
+                "CentOS7x8664withUpdatesHVM":"ami-af4333cf"
             },
             "eu-central-1":{
-                "CentOS7x8664withUpdatesHVM":"ami-e68f82fb"
+                "CentOS7x8664withUpdatesHVM":"ami-9bf712f4"
             },
             "eu-west-1":{
-                "CentOS7x8664withUpdatesHVM":"ami-33734044"
+                "CentOS7x8664withUpdatesHVM":"ami-7abd0209"
             },
             "ap-southeast-1":{
-                "CentOS7x8664withUpdatesHVM":"ami-2a7b6b78"
+                "CentOS7x8664withUpdatesHVM":"ami-f068a193"
             },
             "ap-southeast-2":{
-                "CentOS7x8664withUpdatesHVM":"ami-d38dc6e9"
+                "CentOS7x8664withUpdatesHVM":"ami-fedafc9d"
             },
             "ap-northeast-1":{
-                "CentOS7x8664withUpdatesHVM":"ami-b80b6db8"
+                "CentOS7x8664withUpdatesHVM":"ami-eec1c380"
+            },
+            "ap-northeast-2":{
+                "CentOS7x8664withUpdatesHVM":"ami-c74789a9"
             },
             "sa-east-1":{
-                "CentOS7x8664withUpdatesHVM":"ami-fd0197e0"
+                "CentOS7x8664withUpdatesHVM":"ami-26b93b4a"
             }
         }
     },
